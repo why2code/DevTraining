@@ -1,3 +1,3 @@
-# DevTraining
+# Developer Training Repository
 
-Open project for development training.
+This is an open source project for development training.
