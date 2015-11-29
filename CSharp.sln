@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{E8E1DE51-3B72-43DA-B3D5-72EB355885EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAndPowerOfNumbers", "CSharp\HelloAndPowerOfNumbers.csproj", "{E8E1DE51-3B72-43DA-B3D5-72EB355885EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework-lection1", "CSharp\Homework-lection1\Homework-lection1.csproj", "{0B3F85F3-3992-4ABD-9E41-8C3E974DEB04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E8E1DE51-3B72-43DA-B3D5-72EB355885EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8E1DE51-3B72-43DA-B3D5-72EB355885EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8E1DE51-3B72-43DA-B3D5-72EB355885EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3F85F3-3992-4ABD-9E41-8C3E974DEB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3F85F3-3992-4ABD-9E41-8C3E974DEB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3F85F3-3992-4ABD-9E41-8C3E974DEB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3F85F3-3992-4ABD-9E41-8C3E974DEB04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

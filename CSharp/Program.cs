@@ -13,7 +13,12 @@ namespace CSharp
             kazva na PC: vzemi konzolata i v neq napishi "Hello there!" */
 
             /*Otdolu vkarvame 2 chisla v konzolata i gi stepenuvame (chislo A na stepen chislo B).
-            Konzolata chete SAMO TEKST, zatova trqbva da se konvertira v chislo chrez A=int.Parse i vyvedenoto kato tekst v konzolata.*/
+            Konzolata chete SAMO TEKST, zatova trqbva da se konvertira v chislo chrez A=int.Parse i vyvedenoto kato tekst v konzolata.
+            
+            Natiskane na ctrl + . pri preimenuvane na promelniva ili class ni pozvolqva da q preimenuvame navsqkyde v koda.
+            Natiskane na ctrl + F5 ni startira i izpylnqva koda.
+            Natiskane na F10 ni vkarva v Debug mode.*/
+
             int A;
             string NumberOne = Console.ReadLine();
             A = int.Parse(NumberOne);
