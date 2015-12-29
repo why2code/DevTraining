@@ -29,6 +29,28 @@ namespace CSharp
 
             Console.WriteLine(Math.Pow(A, B));
 
+
+            //Deklarirane na tip danni i konvertirane v drug tip
+
+            object MyNumber = 100;
+            Console.WriteLine("The value of My Number is {0}", MyNumber);
+
+            MyNumber = "5";
+            Console.WriteLine("The value of My Number is {0}", MyNumber);
+            /* Tipa object e nai-glavniq, bazov tip danni. Ako se opitame prosto da mu dobavim danni ot tip string ("5"), toi
+            shte sraboti i shte izvadi stoinost. Na object tip danni, obache, ne sa prisyshti matematicheski znaci.
+
+            Otdolu se pokazva konvertirane (ili pridavane) na stoinost ot tip string na tip byte. 
+            Tova stava s pomoshta na Parse. Ako izpisnem byte NewNum = "2", to tova ne raboti.
+            Za da sraboti, pravim slednoto...*/
+
+            byte NewNum = 250;
+            Console.WriteLine("The value of My Number is {0}", NewNum);
+
+            NewNum = byte.Parse("13");
+            Console.WriteLine("The value of My Number is {0}", NewNum);
+
+
         }
     }
 }
