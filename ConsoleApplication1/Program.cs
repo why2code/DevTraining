@@ -111,6 +111,57 @@ namespace primitiveDataTypes
             Declare two integer variables a and b and assign them with 5 and 10 and after that exchange
             their values by using some programming logic. Print the variable values before and after the exchange */
 
+            int Five = 5;
+            int Ten = 10;
+            Console.WriteLine("The values before the swap are {0} and {1} .", Five, Ten);
+            int SwapValues = Five;
+            Five = Ten;
+            Ten = SwapValues;
+            Console.WriteLine("The values after the swap are {0} and {1} .", Five, Ten);
+
+
+            /* Problem 10. Employee Data
+            A marketing company wants to keep record of its employees. Each record would have the following
+            characteristics:
+
+            First name
+            Last name
+            Age (0...100)
+            Gender (m or f)
+            Personal ID number (e.g. 8306112507)
+            Unique employee number (27560000…27569999)
+            
+            Declare the variables needed to keep the information for a single employee using appropriate
+            primitive data types. Use descriptive names. Print the data at the console. */
+
+            string firstName = "Haralampi";
+            string lastName = "Stoyanov";
+            byte userAge = 27;
+            char personGender = 'm';
+            long personalID = 8306112507;
+            uint employeeNumber = 27569999;
+
+            Console.WriteLine("Employee data: {0}, {1}, {2}, {3}, {4}, {5}", firstName, lastName, userAge, personGender, personalID, employeeNumber );
+
+
+            /* Problem 12. Null Values Arithmetic
+            Create a program that assigns null values to an integer and to a double variable.
+            Try to print these variables at the console.
+            Try to add some number or the null literal to these variables and print the result. */
+
+            int? intAsNull = null;
+            double? doubleAsInt = null;
+            Console.Write("These are the null values:" + intAsNull + doubleAsInt);
+
+            intAsNull = 100;
+            doubleAsInt = 30.148432456;
+
+            Console.Write("These are the assigned values:" + intAsNull + "  " + doubleAsInt);
+
+
+
+
+
 
 
 
