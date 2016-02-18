@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace ConditionalStatements
 {
@@ -230,10 +231,167 @@ namespace ConditionalStatements
             Use nested if statements. 
             Note: Don’t use arrays and the built-in sorting functionality. */
 
+            //Console.WriteLine("Please enter 3 numbers:");
+            //Console.Write("Number a:");
+            //double a = double.Parse(Console.ReadLine());
+            //Console.Write("Number b:");
+            //double b = double.Parse(Console.ReadLine());
+            //Console.Write("Number c:");
+            //double c = double.Parse(Console.ReadLine());
+            //// a > b & a > c
+            //// nested if b > c   abc
+            //// else  acb
+            //if (a > b & a > c)
+            //{
+            //    if (b > c)
+            //    {
+            //        Console.WriteLine("The 3 numbers in order are: {0}, {1} and {2}.", a, b, c);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The 3 numbers in order are: {0}, {1} and {2}.", a, c, b);
+            //    }
+            //}
+            //
+            //// b > a & b > c
+            //// nested if a > c   bac
+            //// else bca
+            //if (b > a & b > c)
+            //{
+            //    if (a > c)
+            //    {
+            //        Console.WriteLine("The 3 numbers in order are: {0}, {1} and {2}.", b, a, c);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The 3 numbers in order are: {0}, {1} and {2}.", b, c, a);
+            //    }
+            //}
+            //
+            //// c > a & c > b
+            //// nested if a > b   cab
+            //// else  cba
+            //if (c > a & c > b)
+            //{
+            //    if (a > b)
+            //    {
+            //        Console.WriteLine("The 3 numbers in order are: {0}, {1} and {2}.", c, a, b);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The 3 numbers in order are: {0}, {1} and {2}.", c, b, a);
+            //    }
+            //// else if a == b == c
+            //}
+            //else if (a == b && b == c)
+            //{
+            //    Console.WriteLine("The 3 numbers in order are actually EQUAL: {0}, {1} and {2}.", a, b, c);
+            //}
+
+            /* Problem 8. Digit as Word
+            Write a program that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English).
+            Print “not a digit” in case of invalid input. Use a switch statement. */
+
+            //Console.WriteLine("Please enter a digit between 0 and 9.");
+            //string digit = Console.ReadLine();
+            //    switch (digit)
+            //    {
+            //
+            //        case "0": Console.WriteLine("zero"); break;
+            //        case "1": Console.WriteLine("one"); break;
+            //        case "2": Console.WriteLine("two"); break;
+            //        case "3": Console.WriteLine("three"); break;
+            //        case "4": Console.WriteLine("four"); break;
+            //        case "5": Console.WriteLine("five"); break;
+            //        case "6": Console.WriteLine("six"); break;
+            //        case "7": Console.WriteLine("seven"); break;
+            //        case "8": Console.WriteLine("eight"); break;
+            //        case "9": Console.WriteLine("nine"); break;
+            //        default: Console.WriteLine("Not a valid digit."); break;
+            //    }
 
 
+            /* Problem 9. Play with Int, Double and String
+            Write a program that, depending on the user’s choice, inputs an int, double or string variable.
+            If the variable is int or double, the program increases it by one. 
+            If the variable is a string, the program appends * at the end. Print the result at the console. Use switch statement. */
 
+            /*  Example 1:
+            program user
+            Please choose a type:	
+            1-- > int
+            2-- > double
+            3-- > string    3
+            Please enter a string:	hello
+            hello * 
 
+            Example 2:
+            program	user
+            Please choose a type:	
+            1 --> int	
+            2 --> double	2
+            3 --> string	
+            Please enter a double:	1.5
+            2.5             */
+
+            //Console.WriteLine("Please select one of the following 3 types of data:");
+            //Console.WriteLine("1-- > int");
+            //Console.WriteLine("2-- > double");
+            //Console.WriteLine("3 --> string");
+            //int userSelection = int.Parse(Console.ReadLine());
+            //
+            //switch (userSelection)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Selected option is intiger. Please enter a number:");
+            //        int selectedInt = int.Parse(Console.ReadLine());
+            //        selectedInt += 1;
+            //        Console.WriteLine("The result is: {0}", selectedInt);
+            //        break;
+            //
+            //    case 2:
+            //        Console.WriteLine("Selected option is double. Please enter a number:");
+            //        double selectedDouble = double.Parse(Console.ReadLine());
+            //        selectedDouble += 1;
+            //        Console.WriteLine("The result is: {0}", selectedDouble);
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Selected option is string. Please enter your text:");
+            //        string selectedText = Console.ReadLine();
+            //        Console.WriteLine("The result is: " + selectedText + "*");
+            //        break;
+            //}
+
+            /* Problem 10.* Beer Time
+            A beer time is after 1:00 PM and before 3:00 AM. Write a program that enters a time in format “hh:mm tt”
+            (an hour in range [01...12], a minute in range [00…59] and AM / PM designator) and prints beer time or non-beer
+            time according to the definition above or invalid time if the time cannot be parsed. 
+            Note: You may need to learn how to parse dates and times. */
+
+            Console.Write("Please enter time in format hours:minutes am/pm (ex 03:26 am): ");
+            string inpit = Console.ReadLine();
+            DateTime beerTime;
+            bool timeCheck = DateTime.TryParse(inpit, out beerTime);
+                        
+            DateTime beerTimeStart = DateTime.Parse("1:00 PM");
+            DateTime beerTimeEnd = DateTime.Parse("3:00 AM");
+            
+            if (timeCheck)
+            {
+                if ((beerTime >= beerTimeStart) || (beerTime < beerTimeEnd))
+                {
+                    Console.WriteLine("Beer time");
+                }
+                else
+                {
+                    Console.WriteLine("non beer time");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Could not convert, not a valid time entry!");
+            }
+            
 
 
 
