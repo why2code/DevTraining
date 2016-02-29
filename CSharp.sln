@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalStatements", "ConditionalStatements\ConditionalStatements.csproj", "{D0C7DC24-0208-4750-BC13-EF2879F1816E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{A9ADEA6D-D182-4BED-96A1-FE00C4DF8741}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D0C7DC24-0208-4750-BC13-EF2879F1816E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0C7DC24-0208-4750-BC13-EF2879F1816E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0C7DC24-0208-4750-BC13-EF2879F1816E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9ADEA6D-D182-4BED-96A1-FE00C4DF8741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9ADEA6D-D182-4BED-96A1-FE00C4DF8741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9ADEA6D-D182-4BED-96A1-FE00C4DF8741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9ADEA6D-D182-4BED-96A1-FE00C4DF8741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
